@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #111111;
+    font-family: 'Lato', sans-serif;
+}
+
+/* 
+HEADER HEADER HEADER HEADER
+*/
+
+.header-ctr {
+    width: 100%;
+    height: 80px;
+    border-bottom: blue solid 1px;
+    background: #111111;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.header-grid {
+    display: flex;
+}
+
+.business-name,
+.header-link-ctr {
+    display: flex;
+    margin-top: 18px;
+    margin-left: 20px;
+}
+
+.business-name {
+    font-family: 'Nanum Gothic Coding', monospace;
+    width: 70%;
+}
+
+.header-link-ctr {
+    width: 30%;
+}
+
+.lt-tag {
+    color: blue;
+}
+
+.last-name-text {
+    color: blue;
+}
+
+.codes-text {
+    color: #DFF3E4;
+}
+
+.lt-tag,
+.last-name-text,
+.codes-text {
+    margin-left: 5px;
+    font-size: 40px;
+}
+
+.header-link {
+    width: 25%;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.header-link a {
+    color: #DFF3E4;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* 
+CONTENT CONTENT CONTENT CONTENT
+*/
+
+.content-ctr,
+.section {
+    width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.image-ctr,
+.intro-text-pt2-ctr {
+    width: 100%;
+}
+
+.intro-text-ctr {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 300px;
+}
+
+.intro-text-pt2-ctr {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.intro-text {
+    color: white;
+    font-size: 60px;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.intro-text-pt2 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.sect-2-txt-ctr,
+.sect-3-txt-ctr,
+.sect-4-txt-ctr {
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    margin-top: 100px;
+}
+
+.sect-2-txt,
+.sect-3-txt,
+.sect-4-txt {
+    color: white;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 30px;
+}
+
+.projects-ctr,
+.education-ctr,
+.skills-ctr {
+    width: 90%;
+    margin: auto;
+    border-top: solid blue 2px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.cards {
+    width: 33.3%;
+    margin-top: 55px;
+}
+
+.cards-inner {
+    width: 90%;
+    margin: auto;
+    box-shadow: 0px 0px 10px 1px blue;
+    height: 600px;
+    border-radius: 15px;
+}
+
+.card-img {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.card-name-ctr {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    border-bottom: solid white 1px;
+    padding-bottom: 10px;
+    display: flex;
+}
+
+.card-name-ctr p {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.card-description-ctr {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.card-description-ctr p {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.card-button-ctr {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.card-button {
+    background-color: transparent;
+    border: solid blue 2px;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 20px;
+    color: white;
+    width: 40%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.education-wrapper-ctr {
+    width: 100%;
+    display: flex;
+}
+
+.woz-u-img-ctr,
+.education-content-ctr {
+    width: 50%;
+    text-align: center;
+}
+
+.woz-u-img {
+    width: 800px;
+    height: 600px;
+    margin-top: 40px;
+}
+
+.proof-txt {
+    color: white;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+}
+
+.education-txt-ctr {
+    text-align: center;
+    margin-top: 300px;
+}
+
+.education-txt {
+    color: white;
+    font-size: 40px;
+    font-family: 'Lato', monospace;
+    width: 100%;
+    margin: auto;
+}
+
+.skills-grid {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.skills-grid-1 {
+    width: 25%;
+}
+
+.skills-grid-2 {
+    width: 33.3%;
+}
+
+.skills-grid-inner {
+    width: 50%;
+    margin: auto;
+}
+
+.skills-img-ctr,
+.skills-title-ctr {
+    width: 100%;
+    text-align: center;
+}
+
+.fa-html5 {
+    color: #e34c26;
+    font-size: 200px;
+}
+
+.fa-js {
+    color: yellow;
+    font-size: 200px;
+}
+
+.fa-css3-alt {
+    color: #264de4;
+    font-size: 200px;
+}
+
+.fa-react {
+    color: #61DBFB;
+    font-size: 200px;
+}
+
+.skills-title-txt {
+    color: white;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* .skills-txt1 {
+    margin-top: 40px;
+} */
+
+.skills-ctr-2 {
+    border: none;
+}
+
+.mysql-image {
+    width: 300px;
+    height: 200px;
+}
+
+.sequelize-img {
+    width: 200px;
+    height: 200px;
+}
+
+.express-image {
+    width: 300px;
+    height: 50px;
+    margin-top: 115px;
+}
+
+.skills-txt2 {
+    margin-top: 35px;
+}
+
+.footer-ctr {
+    width: 100%;
+    height: 100px;
+    margin-top: 130px;
+    border-top: solid 1px blue;
+}
