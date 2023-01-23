@@ -2,15 +2,50 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harman Codes</title>
     <link rel="stylesheet" href="../styles/about.css" />
+    <link rel="stylesheet" href="../styles/responsiveStyles/aboutRes.css" />
+    <link rel="stylesheet" href="../styles/responsiveStyles/headerRes.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Nanum+Gothic+Coding&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Lato:wght@300;400&family=Nanum+Gothic+Coding&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/22c36aee78.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div class="mobile-toggle-ctr" onclick="mobileCtr()">
+        <div class="bar-div"></div>
+        <div class="bar-div"></div>
+        <div class="bar-div"></div>
+    </div>
+    <header class="mobile-header-ctr">
+        <div class="x-ctr" onclick="closeMobileNav()">
+            <div class="x-div-1"></div>
+            <div class="x-div-2"></div>
+        </div>
+        <div class="mobile-nav-ctr">
+            <nav>
+                <ul class="mobile-ul-ctr">
+                    <li class="mobile-link-ctrs">
+                        <a href="../index.html" class="mobile-links">Home</a>
+                    </li>
+                    <li class="mobile-link-ctrs">
+                        <a href="./pages/about.html" class="mobile-links">About</a>
+                    </li>
+                    <li class="mobile-link-ctrs">
+                        <a href="./pages/projects.html" class="mobile-links">Projects</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <header class="header-ctr">
         <div class="header-grid">
             <div class="business-name">
@@ -27,10 +62,7 @@
                     <a href="../pages/about.html">About</a>
                 </div>
                 <div class="header-link">
-                    <a>Projects</a>
-                </div>
-                <div class="header-link">
-                    <a>Pricing</a>
+                    <a href="../pages/projects.html">Projects</a>
                 </div>
             </div>
         </div>
@@ -56,68 +88,197 @@
             <div class="sect-2-txt-ctr">
                 <p class="sect-2-txt">Take a look at my projects:</p>
             </div>
+
+
+
             <div class="projects-ctr">
-                <div class="cards card-1">
-                    <div class="cards-inner">
-                        <div class="card-img-ctr">
-                            <img class="card-img" src="./images/programming-1873854_960_720.webp" width="90%"
-                                height="300px">
+                <div class="gameboy-ctr">
+                    <div class="gameboy-inner">
+                        <div class="gameboy-top">
+                            <div class="gameboy-pL"></div>
+                            <div class="gameboy-pM"></div>
+                            <div class="gameboy-pR"></div>
                         </div>
-                        <div class="card-name-ctr">
-                            <p>Name:</p>
-                            <p style="margin-left: 10px;"><b>SapceX Home Clone</b></p>
+                        <div class="gameboy-screen">
+                            <div class="gameboy-screen-top">
+                                <div class="gameboy-screen-lineL">
+                                    <div class="gameboy-screen-lineL-inner"></div>
+                                </div>
+                                <div class="gameboy-screen-text-ctr">
+                                    <p class="gameboy-screen-text">DOT MATRIX WITH STEREO SOUND</p>
+                                </div>
+                                <div class="gameboy-screen-lineR">
+                                    <div class="gameboy-screen-lineR-inner"></div>
+                                </div>
+                            </div>
+                            <div class="gameboy-main-screen">
+                                <div class="gameboy-battery-ctr">
+                                    <div class="battery-dot"></div>
+                                    <p class="battery-text">BATTERY</p>
+                                </div>
+                                <div class="gameboy-realScreen-ctr">
+
+
+                                    <!-- Screen Renders Here -->
+                                    <div class="inner-screen-ctr">
+                                        <div class="innerScreen-welcome-ctr">
+                                            <p class="innerScreen-welcome">
+                                                Welcome
+                                            </p>
+                                        </div>
+                                        <div class="innerScreen-pressStart-ctr">
+                                            <p class="innerScreen-pressStart">
+                                                Press Start or the ESC Key to continue!
+                                            </p>
+                                        </div>
+
+                                        <div class="innerScreen-hideMenu">
+                                            <p class="hideMenu-p1" id="p1-txt">
+                                                <!-- Text get put in here by js -->
+                                            </p>
+                                            <p class="hideMenu-p2" id="p2-txt">
+                                                Press A or Enter to continue
+                                            </p>
+                                        </div>
+
+                                        <div class="innerScreen-navigation">
+                                            <div class="innerScreen-navTitle-ctr">
+                                                <p class="innerScreen-navTitle">
+                                                    SELECT A PROJECT
+                                                </p>
+                                            </div>
+                                            <div class="innerScreen-navBars">
+                                                <div class="innerScreen-navBar1">
+                                                    <p class="navTxt" id="nav1">GradeSystem</p>
+                                                </div>
+                                                <div class="innerScreen-navBar2">
+                                                    <p class="navTxt1" id="nav2">SpaceX Clone (Responsive)</p>
+                                                </div>
+                                                <div class="innerScreen-navBar3">
+                                                    <p class="navTxt1" id="nav3">Calculator</p>
+                                                </div>
+                                                <div class="innerScreen-navBar4">
+                                                    <p class="navTxt1" id="nav4">Responsive Web Clone</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="allProjects-ctr">
+                                            <div class="description-ctr">
+                                                <p class="description-txt">DESCRIPTION</p>
+                                            </div>
+                                            <div class="gradeSystem-ctr">
+                                                <div class="gradeSystem-description-ctr">
+                                                    <p class="gradeSystem-description" id="gradeSystem-txt"></p>
+                                                </div>
+                                                <div class="gradeSystem-select-ctr">
+                                                    <div class="gradeSystem-opt1">
+                                                        <a id="gradeOpt-1" class="gradeSystem-link" href="">OPEN APP</a>
+                                                    </div>
+                                                    <div class="gradeSystem-opt2">
+                                                        <p id="gradeOpt-2">BACK</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="spacex-ctr">
+                                                <div class="spacex-description-ctr">
+                                                    <p class="spacex-description" id="spacex-txt"></p>
+                                                </div>
+                                                <div class="spacex-select-ctr">
+                                                    <div class="spacex-opt1">
+                                                        <a id="spacexOpt-1" href="" class='spacex-link'>OPEN APP</a>
+                                                    </div>
+                                                    <div class="spacex-opt2">
+                                                        <p id="spacexOpt-2">BACK</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calculator-ctr">
+                                                <div class="calculator-description-ctr">
+                                                    <p class="calculator-description" id="calculator-txt"></p>
+                                                </div>
+                                                <div class="calculator-select-ctr">
+                                                    <div class="calculator-opt1">
+                                                        <a id="" href="" class="calc-link">OPEN APP</a>
+                                                    </div>
+                                                    <div class="calculator-opt2">
+                                                        <p>BACK</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="responsive-ctr">
+                                                <div class="responsive-description-ctr">
+                                                    <p class="responsive-description" id="responsive-txt"></p>
+                                                </div>
+                                                <div class="responsive-select-ctr">
+                                                    <div class="responsive-opt1">
+                                                        <a id="" href="" class="respon-link">OPEN APP</a>
+                                                    </div>
+                                                    <div class="responsive-opt2">
+                                                        <p>BACK</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="gameboy-empty-ctr"></div>
+                            </div>
                         </div>
-                        <div class="card-description-ctr">
-                            <p>I re-programmed the home page very similar to the way
-                                SpaceX's home page was built. This page is mobile friendly.
-                            </p>
+                        <div class="gameboy-controls-ctr">
+                            <div class="gameboy-controls-wrapper">
+                                <div class="gameboy-dpad-ctr">
+                                    <div class="gameboy-dpad-group">
+                                        <div class="gameboy-dpad-toprow">
+                                            <button type="button" class="dpad-up" onclick="dpadUp()"
+                                                id="dpad-up"></button>
+                                        </div>
+                                        <div class="gameboy-dpad-middlerow">
+                                            <button type="button" class="dpad-left" onclick="dpadLeft()"
+                                                id="dpad-left"></button>
+                                            <div class="button-center"></div>
+                                            <button type="button" class="dpad-right" onclick="dpadRight()"
+                                                id="dpad-right"></button>
+                                        </div>
+                                        <div class="gameboy-dpad-bottomrow">
+                                            <button type="button" class="dpad-down" onclick="dpadDown()"
+                                                id="dpad-down"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gameboy-ba-ctr">
+                                    <div class="ba-group">
+                                        <div class="a-ctr">
+                                            <button type="button" class="a-button" id="a-btn" onclick="aBtn()"></button>
+                                            <p>A</p>
+                                        </div>
+                                        <div class="b-ctr">
+                                            <button type="button" class="b-button"></button>
+                                            <p>B</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-button-ctr">
-                            <button type="button" class="card-button"><a>View Project</a></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="cards card-1">
-                    <div class="cards-inner">
-                        <div class="card-img-ctr">
-                            <img class="card-img" src="./images/programming-1873854_960_720.webp" width="90%"
-                                height="300px">
-                        </div>
-                        <div class="card-name-ctr">
-                            <p>Name:</p>
-                            <p style="margin-left: 10px;"><b>SapceX Home Clone</b></p>
-                        </div>
-                        <div class="card-description-ctr">
-                            <p>I re-programmed the home page very similar to the way
-                                SpaceX's home page was built. This page is mobile friendly.
-                            </p>
-                        </div>
-                        <div class="card-button-ctr">
-                            <button type="button" class="card-button"><a>View Project</a></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="cards card-1">
-                    <div class="cards-inner">
-                        <div class="card-img-ctr">
-                            <img class="card-img" src="./images/programming-1873854_960_720.webp" width="90%"
-                                height="300px">
-                        </div>
-                        <div class="card-name-ctr">
-                            <p>Name:</p>
-                            <p style="margin-left: 10px;"><b>SapceX Home Clone</b></p>
-                        </div>
-                        <div class="card-description-ctr">
-                            <p>I re-programmed the home page very similar to the way
-                                SpaceX's home page was built. This page is mobile friendly.
-                            </p>
-                        </div>
-                        <div class="card-button-ctr">
-                            <button type="button" class="card-button"><a>View Project</a></button>
+                        <div class="gameboy-pause-ctr">
+                            <div class="select-ctr">
+                                <button type="button" class="select-button" id="select-btn"></button>
+                                <p>SELECT</p>
+                            </div>
+                            <div class="start-ctr">
+                                <button type="button" class="start-button" onclick="startBtn()" id="start-btn"></button>
+                                <p>START</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+
         </div>
         <div class="section section-3">
             <div class="sect-3-txt-ctr">
@@ -131,11 +292,6 @@
                         <!-- Replace with image of certification -->
                     </div>
                     <div class="education-content-ctr">
-                        <div class="education-title-ctr">
-                            <p class="education-title">
-                                Woz U Education Program
-                            </p>
-                        </div>
                         <div class="education-txt-ctr">
                             <p class="education-txt">
                                 Woz U offered a 8 month Full-Stack Developer program. This program went
@@ -234,6 +390,8 @@
         <footer class="footer-ctr">
 
         </footer>
+        <script src="../scripts/gameboy.js"></script>
+        <script src="../scripts/header.js"></script>
 </body>
 
 </html>

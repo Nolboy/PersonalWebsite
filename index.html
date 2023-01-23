@@ -2,15 +2,50 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harman Codes</title>
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./styles/responsiveStyles/headerRes.css" />
+    <link rel="stylesheet" href="./styles/responsiveStyles/indexRes.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Nanum+Gothic+Coding&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Lato:wght@300;400&family=Nanum+Gothic+Coding&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/22c36aee78.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div class="mobile-toggle-ctr" onclick="mobileCtr()">
+        <div class="bar-div"></div>
+        <div class="bar-div"></div>
+        <div class="bar-div"></div>
+    </div>
+    <header class="mobile-header-ctr">
+        <div class="x-ctr" onclick="closeMobileNav()">
+            <div class="x-div-1"></div>
+            <div class="x-div-2"></div>
+        </div>
+        <div class="mobile-nav-ctr">
+            <nav>
+                <ul class="mobile-ul-ctr">
+                    <li class="mobile-link-ctrs">
+                        <a href="./index.html" class="mobile-links">Home</a>
+                    </li>
+                    <li class="mobile-link-ctrs">
+                        <a href="./pages/about.html" class="mobile-links">About</a>
+                    </li>
+                    <li class="mobile-link-ctrs">
+                        <a href="./pages/projects.html" class="mobile-links">Projects</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <header class="header-ctr">
         <div class="header-grid">
             <div class="business-name">
@@ -24,10 +59,7 @@
                     <a href="./pages/about.html">About</a>
                 </div>
                 <div class="header-link">
-                    <a>Projects</a>
-                </div>
-                <div class="header-link">
-                    <a>Pricing</a>
+                    <a href="./pages/projects.html">Projects</a>
                 </div>
             </div>
         </div>
@@ -104,7 +136,29 @@
         <div class="welcome-title-ctr-2">
             <p class="txt-p5">Full-Stack Developer</p>
         </div>
+        <div class="socialLinks-ctr">
+            <div class="socialLink-wrapper">
+                <div class="socialLink-grid">
+                    <a href="https://www.linkedin.com/in/nolan-harman-6ba784183/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="socialLink-grid">
+                    <a href="https://github.com/Nolboy">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <div class="socialLink-grid">
+                    <div class="socialLink-inner">
+                        <a class="test" href="mailto:nolanharmanpcmr@gmail.com">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="./scripts/header.js"></script>
 </body>
 
 </html>

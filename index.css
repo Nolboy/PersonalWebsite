@@ -69,7 +69,7 @@ HEADER HEADER HEADER HEADER
 }
 
 .header-link {
-    width: 25%;
+    width: 33.3%;
     text-align: center;
     margin-top: 18px;
 }
@@ -83,7 +83,8 @@ HEADER HEADER HEADER HEADER
 /* Content */
 
 .content-ctr {
-    width: 90%;
+    position: absolute;
+    width: 100%;
     height: 100vh;
     margin: auto;
     background: radial-gradient(circle, rgba(0, 0, 0, 0.0) 0%, rgba(17, 17, 17, 1) 55%), url('./images/space-1721695_1280.jpg');
@@ -94,9 +95,6 @@ HEADER HEADER HEADER HEADER
 }
 
 .welcome-title-ctr-1 {
-    width: 90%;
-    margin: auto;
-    padding-top: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,16 +102,14 @@ HEADER HEADER HEADER HEADER
     font-size: 120px;
     letter-spacing: 20px;
     opacity: 1;
+    margin-top: 25vh;
 }
 
 .welcome-title-ctr-2 {
-    width: 90%;
-    margin: auto;
     font-family: 'Nanum Gothic Coding', monospace;
     font-size: 80px;
     letter-spacing: normal;
     text-align: center;
-    margin-top: 40px;
 }
 
 .txt-p5 {
@@ -173,11 +169,37 @@ HEADER HEADER HEADER HEADER
     }
 
     100% {
-        transform: translateY(70vh) scale(0.4);
+        transform: translateY(65vh) scale(0.4);
         opacity: 0;
     }
 
     /* 100% {
         transform: scale(0)
     } */
+}
+
+.socialLinks-ctr {
+    width: 25%;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.socialLink-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.socialLink-grid {
+    width: 33.3%;
+    text-align: center;
+}
+
+.socialLink-inner {
+    z-index: 4;
+}
+
+.fa-brands,
+.fa-solid {
+    color: white;
+    font-size: 80px;
 }
