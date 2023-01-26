@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Nanum+Gothic+Coding&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/22c36aee78.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -33,15 +35,242 @@
                 <div class="header-link">
                     <a href="./projects.html">Projects</a>
                 </div>
-                <div class="header-link">
-                    <a>Contact</a>
-                </div>
             </div>
         </div>
     </header>
     <div class="project-ctr">
+        <div class="project-ctr-inner">
+            <div class="intro-ctr">
+                <p class="intro-txt">My Projects</p>
+            </div>
+            <div class="selectProj-ctr">
+                <div class="all-projects">
+                    <div class="project-left">
+                        <div class="project-name-ctr">
+                            <p class="project-name">GradeSystem</p>
+                        </div>
+                        <div class="hidden-ctr hidden-ctr1">
+                            <div class="project-img-ctr">
+                                <img width="100%" height="auto" src="../images/planet-581239_1280.jpg"
+                                    class="project-img" />
+                            </div>
+                            <div class="project-desc-ctr">
+                                <p>This app supports secure authentication, and protected routes.
+                                    The app also has many GET, POST, PUT, and DELETE requests. This
+                                    can only be done through admin routes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-right">
+                        <div class="button-ctr">
+                            <button class="toggle-button" onclick="toggleCtr1()">
+                                <i class="fa-solid fa-chevron-down fa-1"></i>
+                            </button>
+                        </div>
+                        <div class="hidden-ctr hidden-ctr2">
+                            <div class="hidden-intro-ctr">
+                                <p>Technology Used</p>
+                            </div>
+                            <div class="tech-ctr">
+                                <div class="front-title-ctr">
+                                    <p>Front-End</p>
+                                </div>
+                                <div class="front-tech-ctr">
+                                    <ul>
+                                        <li>React.js</li>
+                                        <li>JSX</li>
+                                        <li>Axios</li>
+                                        <li>jQuery</li>
+                                    </ul>
+                                </div>
+                                <div class="back-title-ctr">
+                                    <p>Back-End</p>
+                                </div>
+                                <div class="back-tech-ctr">
+                                    <ul>
+                                        <li>Express.js</li>
+                                        <li>Sequelize</li>
+                                        <li>Bcrypt</li>
+                                        <li>JWT</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-projects">
+                    <div class="project-left">
+                        <div class="project-name-ctr">
+                            <p class="project-name">SpaceX Clone</p>
+                        </div>
+                        <div class="hidden-ctr hidden-ctr3">
+                            <div class="project-img-ctr">
+                                <img width="100%" height="auto" src="../images/planet-581239_1280.jpg"
+                                    class="project-img" />
+                            </div>
+                            <div class="project-desc-ctr">
+                                <p>This app supports secure authentication, and protected routes.
+                                    The app also has many GET, POST, PUT, and DELETE requests. This
+                                    can only be done through admin routes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-right">
+                        <div class="button-ctr">
+                            <button class="toggle-button" onclick="toggleCtr2()">
+                                <i class="fa-solid fa-chevron-down fa-2"></i>
+                            </button>
+                        </div>
+                        <div class="hidden-ctr hidden-ctr4">
 
+                            <div class="hidden-intro-ctr">
+                                <p>Technology Used</p>
+                            </div>
+                            <div class="tech-ctr">
+                                <div class="front-title-ctr">
+                                    <p>Front-End</p>
+                                </div>
+                                <div class="front-tech-ctr">
+                                    <ul>
+                                        <li>React.js</li>
+                                        <li>JSX</li>
+                                        <li>Axios</li>
+                                        <li>jQuery</li>
+                                    </ul>
+                                </div>
+                                <div class="back-title-ctr">
+                                    <p>Back-End</p>
+                                </div>
+                                <div class="back-tech-ctr">
+                                    <ul>
+                                        <li>Express.js</li>
+                                        <li>Sequelize</li>
+                                        <li>Bcrypt</li>
+                                        <li>JWT</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-projects">
+                    <div class="project-left">
+                        <div class="project-name-ctr">
+                            <p class="project-name">Calculator</p>
+                        </div>
+                        <div class="hidden-ctr hidden-ctr5">
+                            <div class="project-img-ctr">
+                                <img width="100%" height="auto" src="../images/planet-581239_1280.jpg"
+                                    class="project-img" />
+                            </div>
+                            <div class="project-desc-ctr">
+                                <p>This app supports secure authentication, and protected routes.
+                                    The app also has many GET, POST, PUT, and DELETE requests. This
+                                    can only be done through admin routes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-right">
+                        <div class="button-ctr">
+                            <button class="toggle-button" onclick="toggleCtr3()">
+                                <i class="fa-solid fa-chevron-down fa-3"></i>
+                            </button>
+                        </div>
+                        <div class="hidden-ctr hidden-ctr6">
+
+                            <div class="hidden-intro-ctr">
+                                <p>Technology Used</p>
+                            </div>
+                            <div class="tech-ctr">
+                                <div class="front-title-ctr">
+                                    <p>Front-End</p>
+                                </div>
+                                <div class="front-tech-ctr">
+                                    <ul>
+                                        <li>React.js</li>
+                                        <li>JSX</li>
+                                        <li>Axios</li>
+                                        <li>jQuery</li>
+                                    </ul>
+                                </div>
+                                <div class="back-title-ctr">
+                                    <p>Back-End</p>
+                                </div>
+                                <div class="back-tech-ctr">
+                                    <ul>
+                                        <li>Express.js</li>
+                                        <li>Sequelize</li>
+                                        <li>Bcrypt</li>
+                                        <li>JWT</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-projects">
+                    <div class="project-left">
+                        <div class="project-name-ctr">
+                            <p class="project-name">First Web Clone</p>
+                        </div>
+                        <div class="hidden-ctr hidden-ctr7">
+                            <div class="project-img-ctr">
+                                <img width="100%" height="auto" src="../images/planet-581239_1280.jpg"
+                                    class="project-img" />
+                            </div>
+                            <div class="project-desc-ctr">
+                                <p>This app supports secure authentication, and protected routes.
+                                    The app also has many GET, POST, PUT, and DELETE requests. This
+                                    can only be done through admin routes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-right">
+                        <div class="button-ctr">
+                            <button class="toggle-button" onclick="toggleCtr4()">
+                                <i class="fa-solid fa-chevron-down fa-4"></i>
+                            </button>
+                        </div>
+                        <div class="hidden-ctr hidden-ctr8">
+
+                            <div class="hidden-intro-ctr">
+                                <p>Technology Used</p>
+                            </div>
+                            <div class="tech-ctr">
+                                <div class="front-title-ctr">
+                                    <p>Front-End</p>
+                                </div>
+                                <div class="front-tech-ctr">
+                                    <ul>
+                                        <li>React.js</li>
+                                        <li>JSX</li>
+                                        <li>Axios</li>
+                                        <li>jQuery</li>
+                                    </ul>
+                                </div>
+                                <div class="back-title-ctr">
+                                    <p>Back-End</p>
+                                </div>
+                                <div class="back-tech-ctr">
+                                    <ul>
+                                        <li>Express.js</li>
+                                        <li>Sequelize</li>
+                                        <li>Bcrypt</li>
+                                        <li>JWT</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="../scripts/project.js"></script>
 </body>
 
 </html>

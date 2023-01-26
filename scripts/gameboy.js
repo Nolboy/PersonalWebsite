@@ -56,26 +56,78 @@ function dpadLeft() {
 function dpadUp() {
     if (gameboyState === 3) {
         optState--;
-        if (optState === 1) {
-            // const gradeValue1 = document.getElementById('gradeSystemLink').innerHTML;
-            // alert(gradeValue1);
-            $('.gradeSystem-opt1').toggleClass('selectCtr-toggle');
-            $('.gradeSystem-opt2').removeClass('selectCtr-toggle');
+        if (check === 'GradeSystem') {
+            if (optState === 1) {
+                $('.gradeSystem-opt1').toggleClass('selectCtr-toggle');
+                $('.gradeSystem-opt2').removeClass('selectCtr-toggle');
+            };
+
+            if (optState === 2) {
+                $('.gradeSystem-opt2').toggleClass('selectCtr-toggle');
+                $('.gradeSystem-opt1').removeClass('selectCtr-toggle');
+            }
+
+            if (optState === 0) {
+                optState = 2
+                $('.gradeSystem-opt2').toggleClass('selectCtr-toggle');
+                $('.gradeSystem-opt1').removeClass('selectCtr-toggle');
+            }
         };
 
-        if (optState === 2) {
-            // const gradeValue2 = document.getElementById('gradeSystemBack').innerHTML;
-            // alert(gradeValue2);
-            $('.gradeSystem-opt2').toggleClass('selectCtr-toggle');
-            $('.gradeSystem-opt1').removeClass('selectCtr-toggle');
-        }
+        if (check === 'SpaceX Clone (Responsive)') {
+            if (optState === 1) {
+                $('.spacex-opt1').toggleClass('selectCtr-toggle');
+                $('.spacex-opt2').removeClass('selectCtr-toggle');
+            };
 
-        if (optState === 0) {
-            optState = 2;
-            $('.gradeSystem-opt2').toggleClass('selectCtr-toggle');
-            $('.gradeSystem-opt1').removeClass('selectCtr-toggle');
-        }
-    }
+            if (optState === 2) {
+                $('.spacex-opt2').toggleClass('selectCtr-toggle');
+                $('.spacex-opt1').removeClass('selectCtr-toggle');
+            };
+
+            if (optState === 0) {
+                optState = 2
+                $('.spacex-opt2').toggleClass('selectCtr-toggle');
+                $('.spacex-opt1').removeClass('selectCtr-toggle');
+            };
+        };
+
+        if (check === 'Calculator') {
+            if (optState === 1) {
+                $('.calculator-opt1').toggleClass('selectCtr-toggle');
+                $('.calculator-opt2').removeClass('selectCtr-toggle');
+            };
+
+            if (optState === 2) {
+                $('.calculator-opt2').toggleClass('selectCtr-toggle');
+                $('.calculator-opt1').removeClass('selectCtr-toggle');
+            };
+
+            if (optState === 0) {
+                optState = 2
+                $('.calculator-opt2').toggleClass('selectCtr-toggle');
+                $('.calculator-opt1').removeClass('selectCtr-toggle');
+            };
+        };
+
+        if (check === 'Responsive Web Clone') {
+            if (optState === 1) {
+                $('.responsive-opt1').toggleClass('selectCtr-toggle');
+                $('.responsive-opt2').removeClass('selectCtr-toggle');
+            };
+
+            if (optState === 2) {
+                $('.responsive-opt2').toggleClass('selectCtr-toggle');
+                $('.responsive-opt1').removeClass('selectCtr-toggle');
+            };
+
+            if (optState === 0) {
+                optState = 2
+                $('.responsive-opt2').toggleClass('selectCtr-toggle');
+                $('.responsive-opt1').removeClass('selectCtr-toggle');
+            };
+        };
+    };
 
     if (gameboyState === 2) {
         navState--;
@@ -157,21 +209,39 @@ function dpadDown() {
             };
         };
 
-        if (check === 'SpaceX Clone (Responsive)') {
+        if (check === 'Calculator') {
             if (optState === 1) {
-                $('.spacex-opt1').toggleClass('selectCtr-toggle');
-                $('.spacex-opt2').removeClass('selectCtr-toggle');
+                $('.calculator-opt1').toggleClass('selectCtr-toggle');
+                $('.calculator-opt2').removeClass('selectCtr-toggle');
             };
 
             if (optState === 2) {
-                $('.spacex-opt2').toggleClass('selectCtr-toggle');
-                $('.spacex-opt1').removeClass('selectCtr-toggle');
+                $('.calculator-opt2').toggleClass('selectCtr-toggle');
+                $('.calculator-opt1').removeClass('selectCtr-toggle');
             };
 
             if (optState === 3) {
                 optState = 1;
-                $('.spacex-opt1').toggleClass('selectCtr-toggle');
-                $('.spacex-opt2').removeClass('selectCtr-toggle');
+                $('.calculator-opt1').toggleClass('selectCtr-toggle');
+                $('.calculator-opt2').removeClass('selectCtr-toggle');
+            };
+        };
+
+        if (check === 'Responsive Web Clone') {
+            if (optState === 1) {
+                $('.responsive-opt1').toggleClass('selectCtr-toggle');
+                $('.responsive-opt2').removeClass('selectCtr-toggle');
+            };
+
+            if (optState === 2) {
+                $('.responsive-opt2').toggleClass('selectCtr-toggle');
+                $('.responsive-opt1').removeClass('selectCtr-toggle');
+            };
+
+            if (optState === 3) {
+                optState = 1;
+                $('.responsive-opt1').toggleClass('selectCtr-toggle');
+                $('.responsive-opt2').removeClass('selectCtr-toggle');
             };
         };
     };
@@ -217,7 +287,39 @@ function dpadDown() {
 };
 
 function bBtn() {
-    alert('B Button');
+    if (gameboyState === 3) {
+        if (check === 'GradeSystem') {
+            $('.allProjects-ctr').hide();
+            $('.gradeSystem-select-ctr').hide();
+            $('.innerScreen-navigation').show();
+            gameboyState = 2;
+            renderGradeTxt.innerHTML = "";
+            return;
+        } else if (check === 'SpaceX Clone (Responsive)') {
+            $('.allProjects-ctr').hide();
+            $('.spacex-select-ctr').hide();
+            $('.innerScreen-navigation').show();
+            gameboyState = 2;
+            renderSpaceTxt.innerHTML = "";
+            return;
+        } else if (check === 'Calculator') {
+            $('.gradeSystem-txt').remove();
+            $('.allProjects-ctr').hide();
+            $('.gradeSystem-select-ctr').hide();
+            $('.innerScreen-navigation').show();
+            gameboyState = 2;
+            renderCalc.innerHTML = "";
+            return;
+        } else if (check === 'Responsive Web Clone') {
+            $('.gradeSystem-txt').remove();
+            $('.allProjects-ctr').hide();
+            $('.gradeSystem-select-ctr').hide();
+            $('.innerScreen-navigation').show();
+            gameboyState = 2;
+            renderResp.innerHTML = "";
+            return;
+        };
+    };
 };
 
 function aBtn() {
@@ -259,7 +361,7 @@ function aBtn() {
         if (check === 'Calculator') {
             const optValue = document.getElementById(`gradeOpt-${optState}`).innerHTML; //Change gradeOpt id
             if (optValue === 'OPEN APP') {
-                window.open('https://github.com/Nolboy/GradeSystem');
+                window.open('https://github.com/Nolboy/calculator');
             };
 
             if (optValue === 'BACK') {
@@ -276,7 +378,7 @@ function aBtn() {
         if (check === 'Responsive Web Clone') {
             const optValue = document.getElementById(`gradeOpt-${optState}`).innerHTML; //Change gradeOpt id
             if (optValue === 'OPEN APP') {
-                window.open('https://github.com/Nolboy/GradeSystem');
+                window.open('https://github.com/Nolboy/Nolboy_web_copy');
             };
 
             if (optValue === 'BACK') {

@@ -46,7 +46,7 @@
     }
 }
 
-@media screen and (min-width: 800px) and (max-width: 1199px) {
+@media screen and (min-width: 900px) and (max-width: 1199px) {
     .intro-text-1 {
         font-size: 45px;
     }
@@ -94,20 +94,239 @@
     }
 }
 
-/* @media screen and (min-width: 500px) and (max-width: 799px) {
-    .intro-text-1 {
-        font-size: 40px;
+@media screen and (min-width: 500px) and (max-width: 899px) {
+    .education-wrapper-ctr {
+        display: block;
+    }
+
+    .woz-u-img-ctr {
+        width: 100%;
+    }
+
+    .woz-u-img {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .education-content-ctr {
+        width: 100%;
+    }
+
+    .education-ctr {
+        width: 95%;
+    }
+
+    .education-txt-ctr {
+        margin-top: 10px;
+    }
+
+    .education-txt {
+        font-size: 30px;
+    }
+
+    .proof-txt {
+        font-size: 43px;
+        text-decoration-thickness: 1px;
+    }
+
+    .skills-grid {
+        display: none;
+    }
+
+    .mobile-skills-grid {
+        display: flex;
+        margin-top: 40px;
+    }
+
+    .skills-grid-1 {
+        width: 33.3%;
+    }
+
+    .skills-grid-inner {
+        width: 100%;
+    }
+
+    .fa-brands {
+        font-size: 100px;
+    }
+
+    .mysql-image {
+        width: 100%;
+        height: auto;
+        margin-top: -15px;
+    }
+
+    .express-image {
+        width: 100%;
+        height: auto;
+        margin-top: 44px;
+    }
+
+    .sequelize-img {
+        width: 50%;
+        height: auto;
+        margin: auto;
+
+    }
+
+    .skills-title-txt {
+        font-size: 25px;
     }
 
     .intro-text-ctr {
         width: 90%;
-    }
-
-    .intro-text-pt2-ctr {
-        width: 90%
+        margin-top: 100px;
     }
 
     .intro-text-pt2 {
         font-size: 25px;
     }
-} */
+
+    .intro-text {
+        font-size: 30px;
+    }
+
+    .intro-text-pt2-ctr {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .sect-2-txt,
+    .sect-3-txt,
+    .sect-4-txt {
+        text-align: center;
+    }
+
+    .mobile-skills-grid-3 {
+        display: block;
+    }
+
+    .skills-grid-3 {
+        text-align: center;
+        width: 33.3%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 250px) and (max-width: 499px) {
+    .section-2 {
+        display: none;
+    }
+    
+    .education-wrapper-ctr {
+        display: block;
+    }
+
+    .woz-u-img-ctr {
+        width: 100%;
+    }
+
+    .woz-u-img {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .education-content-ctr {
+        width: 100%;
+    }
+
+    .education-ctr,
+    .skills-ctr {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .education-txt-ctr {
+        margin-top: 10px;
+    }
+
+    .education-txt {
+        font-size: 16px;
+    }
+
+    .proof-txt {
+        margin-top: 30px;
+        font-size: 23px;
+        text-decoration-thickness: 1px;
+    }
+
+    .skills-grid {
+        display: none;
+    }
+
+    .mobile-skills-grid {
+        display: flex;
+        margin-top: 40px;
+    }
+
+    .skills-grid-1 {
+        width: 33.3%;
+    }
+
+    .skills-grid-inner {
+        width: 100%;
+    }
+
+    .fa-brands {
+        font-size: 80px;
+    }
+
+    .mysql-image {
+        width: 100%;
+        height: auto;
+        margin-top: 14px;
+    }
+
+    .express-image {
+        width: 100%;
+        height: auto;
+        margin-top: 46px;
+    }
+
+    .sequelize-img {
+        width: 50%;
+        height: auto;
+        margin: auto;
+
+    }
+
+    .skills-title-txt {
+        font-size: 15px;
+    }
+
+    .intro-text-ctr {
+        width: 90%;
+        margin-top: 100px;
+    }
+
+    .intro-text-pt2 {
+        font-size: 16px;
+    }
+
+    .intro-text {
+        font-size: 16px;
+    }
+
+    .intro-text-pt2-ctr {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .sect-2-txt,
+    .sect-3-txt,
+    .sect-4-txt {
+        text-align: center;
+    }
+
+    .mobile-skills-grid-3 {
+        display: block;
+    }
+
+    .skills-grid-3 {
+        text-align: center;
+        width: 33.3%;
+        margin: auto;
+    }
+}

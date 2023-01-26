@@ -63,7 +63,7 @@ HEADER HEADER HEADER HEADER
 }
 
 .header-link {
-    width: 25%;
+    width: 33.3%;
     text-align: center;
     margin-top: 18px;
 }
@@ -72,4 +72,158 @@ HEADER HEADER HEADER HEADER
     color: #DFF3E4;
     font-size: 20px;
     text-decoration: none;
+}
+
+.project-ctr {
+    width: 100%;
+    height: 100vh;
+}
+
+.project-ctr-inner {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    height: 120vh;
+    margin: auto;
+}
+
+.intro-ctr {
+    width: 100%;
+}
+
+.intro-txt {
+    color: white;
+    margin-top: 150px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.selectProj-ctr {
+    width: 100%;
+}
+
+.all-projects {
+    display: flex;
+    width: 100%;
+    border: solid #94b0da 1px;
+    background: #495159;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.project-left {
+    width: 50%;
+}
+
+.project-right {
+    width: 50%;
+}
+
+.hidden-ctr {
+    display: none;
+    opacity: 0;
+    height: 0;
+    transition: 0.2s;
+}
+
+.hidden-ctr-toggle {
+    display: block;
+    opacity: 1;
+    height: 400px;
+    transition: 0.5s;
+}
+
+.project-name {
+    color: white;
+    margin-left: 20px;
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.project-img-ctr {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.button-ctr {
+    width: 100%;
+    text-align: right;
+}
+
+.toggle-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid #94b0da 2px;
+    background: transparent;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.fa-chevron-down {
+    font-size: 25px;
+    color: white;
+}
+
+.hidden-intro-ctr {
+    text-align: left;
+    font-size: 25px;
+    color: white;
+}
+
+.tech-ctr {
+    width: 50%;
+}
+
+.front-title-ctr {
+    font-size: 20px;
+    color: white;
+    margin-top: 15px;
+}
+
+.front-tech-ctr {
+    margin-left: 45px;
+    color: white;
+}
+
+.back-title-ctr {
+    font-size: 20px;
+    color: white;
+    margin-top: 15px;
+}
+
+.back-tech-ctr {
+    margin-left: 45px;
+    color: white;
+}
+
+.project-desc-ctr {
+    width: 90%;
+    text-align: center;
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.arrow-toggle {
+    rotate: 180deg;
+    transition: 0.5s;
+}
+
+.fa-1,
+.fa-2,
+.fa-3,
+.fa-4 {
+    transition: 0.5s;
+}
+
+.footer-ctr {
+    width: 100%;
+    height: 100px;
+    background: white;
 }
